@@ -35,7 +35,7 @@ using super_resolution::ImageData;
 using super_resolution::ImageModel;
 
 // Input images (required):
-DEFINE_string(data_path, "",
+DEFINE_string(data_path, "images/",
     "Path to an input file or directory to super resolve.");
 
 // Set to true to generate the low-resolution images from an image file given
@@ -111,7 +111,7 @@ DEFINE_string(evaluators, "",
 // What to do with the results (optional):
 DEFINE_string(display_mode, "",
     "'result' to display; 'compare' to also display bilinear upsampling.");
-DEFINE_string(result_path, "",
+DEFINE_string(result_path, "images/result.png",
     "Name of file (with path) where the result image will be saved.");
 
 // This struct is used to track input data.

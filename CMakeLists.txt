@@ -74,6 +74,7 @@ add_executable(
 target_link_libraries(
   Test
   LibSuperResolution
+  pthread
   glog
   gflags
   gmock
@@ -92,6 +93,7 @@ add_executable(
 target_link_libraries(
   VisualizeImage
   LibSuperResolution
+  pthread
   glog
   gflags
   ${OpenCV_LIBS}
@@ -105,6 +107,7 @@ add_executable(
 target_link_libraries(
   GenerateData
   LibSuperResolution
+  pthread
   glog
   gflags
   ${OpenCV_LIBS}
@@ -118,6 +121,7 @@ add_executable(
 target_link_libraries(
   ShiftAddFusion
   LibSuperResolution
+  pthread
   glog
   gflags
   ${OpenCV_LIBS}
@@ -131,6 +135,7 @@ add_executable(
 target_link_libraries(
   SuperResolution
   LibSuperResolution
+  pthread
   glog
   gflags
   ${OpenCV_LIBS}
